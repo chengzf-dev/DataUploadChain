@@ -1,0 +1,385 @@
+.data-upload-system {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.system-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.system-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1890ff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(24, 144, 255, 0.1);
+}
+
+.system-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Tabs样式 */
+.ant-tabs {
+  padding: 20px;
+}
+
+.ant-tabs-tab {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+}
+
+.ant-tabs-content-holder {
+  padding: 24px;
+}
+
+/* 钱包连接区域 */
+.wallet-connection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+}
+
+.connected-wallet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 6px;
+}
+
+.wallet-address {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+  color: #52c41a;
+  font-weight: 500;
+}
+
+/* Tab内容区域 */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row label {
+  font-weight: 500;
+  color: #262626;
+  font-size: 14px;
+}
+
+.form-row .ant-input,
+.form-row .ant-input-affix-wrapper {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s;
+}
+
+.form-row .ant-input:hover,
+.form-row .ant-input-affix-wrapper:hover {
+  border-color: #40a9ff;
+}
+
+.form-row .ant-input:focus,
+.form-row .ant-input-affix-wrapper:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 提交按钮区域 */
+.submit-section {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.submit-section .ant-btn {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.2);
+}
+
+.submit-section .ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(24, 144, 255, 0.3);
+}
+
+.submit-section .ant-btn:disabled {
+  transform: none;
+  box-shadow: none;
+}
+
+/* 进度条区域 */
+.progress-section {
+  padding: 24px;
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+}
+
+.progress-section .ant-progress {
+  margin: 0;
+}
+
+.progress-section .ant-progress-text {
+  font-weight: 500;
+}
+
+/* 记录区域 */
+.records-section {
+  padding: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.records-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.records-section h2::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #1890ff, #40a9ff);
+  border-radius: 2px;
+}
+
+/* 表格样式 */
+.records-section .ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.records-section .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.records-section .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.records-section .ant-empty {
+  padding: 40px 0;
+}
+
+.records-section .ant-empty-description {
+  color: #8c8c8c;
+}
+
+/* 分页样式 */
+.records-section .ant-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+/* GraphQL 区域样式 */
+.graphql-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+.graphql-section h2 {
+  margin-bottom: 15px;
+  color: #1890ff;
+  font-size: 18px;
+}
+
+.graphql-controls {
+  margin-bottom: 15px;
+}
+
+.instructors-data {
+  margin-top: 15px;
+}
+
+.instructor-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+.instructor-item h4 {
+  margin-bottom: 10px;
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.instructor-item p {
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.instructor-item a {
+  color: #1890ff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.instructor-item a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .data-upload-system {
+    padding: 16px;
+  }
+  
+  .system-header h1 {
+    font-size: 24px;
+  }
+  
+  .ant-tabs-content-holder {
+    padding: 16px;
+  }
+  
+  .tab-content {
+    padding: 16px;
+  }
+  
+  .form-row {
+    gap: 6px;
+  }
+  
+  .wallet-connection {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .connected-wallet {
+    padding: 6px 10px;
+  }
+  
+  .wallet-address {
+    font-size: 11px;
+  }
+  
+  .submit-section .ant-btn {
+    width: 100%;
+  }
+  
+  .records-section {
+    padding: 16px;
+  }
+  
+  .records-section .ant-table {
+    font-size: 12px;
+  }
+  
+  .records-section .ant-pagination {
+    text-align: center;
+  }
+  
+  .graphql-section {
+    padding: 15px;
+  }
+  
+  .instructor-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .system-header h1 {
+    font-size: 20px;
+  }
+  
+  .ant-tabs-tab {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  
+  .form-row label {
+    font-size: 13px;
+  }
+  
+  .records-section h2 {
+    font-size: 18px;
+  }
+}
+
+/* 动画效果 */
+.tab-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 加载状态 */
+.ant-progress-line {
+  transition: all 0.3s ease;
+}
+
+.ant-progress-success-bg,
+.ant-progress-bg {
+  transition: all 0.3s ease;
+}
+
+/* 表单验证状态 */
+.form-row .ant-input.error {
+  border-color: #ff4d4f;
+}
+
+.form-row .ant-input.error:focus {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+/* 成功状态 */
+.form-row .ant-input.success {
+  border-color: #52c41a;
+}
+
+.form-row .ant-input.success:focus {
+  border-color: #52c41a;
+  box-shadow: 0 0 0 2px rgba(82, 196, 26, 0.2);
+}

@@ -1,0 +1,139 @@
+.wallet-connect {
+  margin: 20px 0;
+}
+
+.wallet-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  min-height: 48px;
+}
+
+.wallet-status.connected {
+  background-color: #f0f9ff;
+  border: 1px solid #0ea5e9;
+  color: #0c4a6e;
+}
+
+.wallet-status.disconnected {
+  background-color: #fef2f2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+}
+
+.wallet-status.loading {
+  background-color: #fffbeb;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+}
+
+.wallet-status.error {
+  background-color: #fef2f2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-indicator {
+  font-size: 16px;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.account-address {
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.network-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.connect-btn, .disconnect-btn, .switch-network-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.connect-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.connect-btn:hover {
+  background-color: #2563eb;
+}
+
+.disconnect-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background-color: #dc2626;
+}
+
+.switch-network-btn {
+  background-color: #f59e0b;
+  color: white;
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+.switch-network-btn:hover {
+  background-color: #d97706;
+}
+
+.install-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.install-link:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .wallet-status {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .wallet-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .network-info {
+    justify-content: center;
+  }
+}

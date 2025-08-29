@@ -1,0 +1,133 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.App-header h1 {
+  margin: 0 0 10px 0;
+  color: #1f2937;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.App-header p {
+  margin: 0 0 20px 0;
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.App-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.tab-nav button {
+  flex: 1;
+  max-width: 200px;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-nav button:hover {
+  color: #374151;
+  background: #f9fafb;
+}
+
+.tab-nav button.active {
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.tab-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px 15px;
+  }
+  
+  .App-header h1 {
+    font-size: 24px;
+  }
+  
+  .App-header p {
+    font-size: 14px;
+  }
+  
+  .App-main {
+    padding: 20px 15px;
+  }
+  
+  .tab-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .tab-nav button {
+    max-width: none;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 20px;
+  }
+  
+  .App-main {
+    padding: 15px 10px;
+  }
+  
+  .tab-nav {
+    margin: 0 -10px 20px -10px;
+    border-radius: 0;
+  }
+  
+  .tab-content {
+    margin: 0 -10px;
+    border-radius: 0;
+  }
+}
